@@ -1,0 +1,88 @@
+<%- include('./_head.ejs'); %>
+<%- include('./_header.ejs'); %> 
+<div class="upload-page">
+  <form id="uploadForm" action="/saveProduct" method="POST" enctype="multipart/form-data">
+    <div class="single-input">
+      <label for="name">Name<span>*</span></label>
+      <br />
+      <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Enter product name"
+      />
+    </div>
+    <div class="single-input">
+      <label for="price">Price<span>*</span></label>
+      <br />
+      <input 
+        type="number" 
+        name="price" 
+        id="price" 
+        autocomplete="off" 
+        placeholder="Enter product price"
+      />
+    </div>
+    <div class="single-input">
+      <label for="cancelledPrice">Cancelled price</label>
+      <br />
+      <input
+        type="number"
+        name="cancelledPrice"
+        id="cancelledPrice"
+        autocomplete="off"
+        placeholder="Enter cancelled price"
+      />
+      <p>*This is price shown with a string through</p>
+    </div>
+    <div class="single-input">
+      <label for="category">Category<span>*</span></label>
+      <br />
+      <input 
+        type="text" 
+        name="category" 
+        id="category" 
+        placeholder="Chhose category"
+      />
+    </div>
+    <div class="single-input">
+      <label for="label">Label<span>*</span></label>
+      <br />
+      <input 
+        type="text" 
+        name="label" 
+        id="label"
+        placeholder="Enter a label" 
+      />
+      <p>*Label for home page</p>
+    </div>
+    <div class="single-input">
+      <label for="features">Features(enter comma seperated features)<span>*</span></label>
+      <br />
+      <textarea name="features" id="features" cols="30" rows="10"></textarea>
+    </div>
+    <div class="single-input">
+      <label for="description">Description<span>*</span></label>
+      <br />
+      <input 
+        type="text" 
+        name="description" 
+        id="description" 
+        placeholder="Enter a short description"
+      />
+    </div>
+    <div class="single-input">
+      <label for="files">Product image<span>*</span></label>
+      <br />
+      <input 
+        type="file" 
+        name="files" 
+        id="files" 
+        multiple 
+      />
+    </div>
+
+    <button>Register product</button>
+  </form>
+</div>
+<%- include('./_close.ejs') %> 

@@ -1,0 +1,24 @@
+.header-2 {
+    background-color: rgb(83, 83, 85);
+    height: 40px;
+}
+.header-2-wrapper {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.header-2-wrapper a {
+    font-size: 0.8rem;
+    color: white;
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 2px;
+    transition: all .2s ease-in;
+}
+.header-2-wrapper a:hover{
+    background-color: darkorchid;
+}

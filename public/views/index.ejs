@@ -1,0 +1,58 @@
+<%- include('./_head.ejs') %>
+    <div class="body">
+        <%- include('./_header.ejs'); %>
+        <%- include('./_notification.ejs'); %>  
+        <%- include('./_header2.ejs'); %>
+        <%- include('./_hero.ejs'); %>
+        <div class="label-wrapper">
+            <div class="head">
+                <p>Top products</p>
+                <p></p>
+            </div>
+            <div class="products-container">
+                <% data.forEach(function(item) { %> 
+                <div class="product-card">
+                    <img src="<%= item.imagePaths[0] %>" alt="product" >
+                    <p class="description">
+                        <%= item.description; %> 
+                    </p>
+                    <p class="product-name">Black knive</p>
+                    <p class="price">
+                        <span>Ksh<%= item.price %></span>
+                        <span class="cancel">Ksh<%= item.cancelledPrice %> </span>
+                    </p>
+                    <div class="ctas">
+                        <button class="cta cta1 card-btn" data-name="<%= item.name %> " data-image="<%= item.imagePaths[0] %> " data-price="<%= item.price %>" data-id="<%= item._id %>">Add to cart</button>
+                        <a href="/single-product/<%= item._id %>" class="cta2 view-product">View</a>
+                    </div>
+                </div>
+                <% }); %> 
+            </div>
+        </div>
+        <div class="label-wrapper">
+            <div class="head">
+                <p>Best value</p>
+                <p></p>
+            </div>
+            <div class="products-container">
+                <% data.forEach(function(item) { %> 
+                <div class="product-card">
+                    <img src="<%= item.imagePaths[0] %>" alt="product" >
+                    <p class="description">
+                        <%= item.description; %> 
+                    </p>
+                    <p class="product-name">Black knive</p>
+                    <p class="price">
+                        <span>Ksh<%= item.price %></span>
+                        <span class="cancel">Ksh<%= item.cancelledPrice %> </span>
+                    </p>
+                    <div class="ctas">
+                        <button class="cta cta1 card-btn" data-name="<%= item.name %> " data-image="<%= item.imagePaths[0] %> " data-price="<%= item.price %>" data-id="<%= item._id %>">Add to cart</button>
+                        <a href="/single-product/<%= item._id %>" class="cta2 view-product">View</a>
+                    </div>
+                </div>
+                <% }); %> 
+            </div>
+        </div>
+    </div>
+<%- include('./_close.ejs') %> 

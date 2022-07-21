@@ -1,0 +1,47 @@
+.upload-page { 
+    /* border: 1px solid red; */
+    margin: 30px 0;
+}
+.upload-page #uploadForm {
+    /* border: 1px solid cadetblue; */
+    max-width: 410px;
+    margin: auto;
+}
+.upload-page #uploadForm .single-input {
+    margin-bottom: 10px;
+}
+.upload-page #uploadForm .single-input p {
+    color: rgb(112, 106, 106);
+    padding-left: 7px;
+}
+.upload-page #uploadForm .single-input label span {
+    color: red;
+}
+.upload-page #uploadForm input:not(input[type="file"]) {
+    width: 100%;
+    padding: 4px 6px;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.upload-page #uploadForm input::placeholder {
+    color: rgba(0, 0, 0, 0.315);
+}
+.upload-page #uploadForm .single-input textarea {
+    width: 100%;
+}
+.upload-page #uploadForm  input[type="file"] {
+    background-color: rgba(153, 50, 204, 0.212);
+    width: 100%;
+}
+.upload-page #uploadForm button {
+    background-color: darkorchid;
+    border: none;
+    width: 50%;
+    padding: 8px 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+

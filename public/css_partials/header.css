@@ -1,0 +1,118 @@
+.main-header {
+    background-color: white;
+    color: black;
+    height: 70px;
+    border-bottom: 1px solid grey;
+    /* margin-bottom: 50px; */
+}
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    opacity: 0.97;
+}
+.main-header-wrapper {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.main-header .logo{
+    width: 25%;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    /* justify-content: center; */
+}
+.main-header .logo p{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: darkorchid;
+}
+.main-header .logo p a{
+    color: inherit;
+    text-decoration: none;
+}
+.main-header .center{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.main-header .center .search-input {
+    width: 80%;
+    position: relative;
+}
+.main-header .center .search-input p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.main-header .center input {
+    width: 100%;
+    padding: 10px 35px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.main-header .center input::placeholder {
+    opacity: 0.5;
+    color: rgb(200, 200, 200);
+}
+.main-header .right{
+    width: 25%;
+    display: flex;
+}
+.main-header .right .register {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.main-header .right .register a {
+    color: white;
+    background-color: darkorchid;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.main-header .right .header-cart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.main-header .right .header-cart > p:first-child{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-header .right .header-cart > p:last-child{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-right: 10px;
+} 
+.main-header .right .header-cart > p:last-child i {
+    font-size: 1.2rem;
+    color: black;
+}
+.main-header .right .header-cart > p:last-child .sync-items {
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;    
+    font-size: 0.8rem;
+}

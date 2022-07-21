@@ -1,0 +1,42 @@
+<%- include('./_head.ejs'); %> 
+<%- include('./_header.ejs'); %> 
+
+<div class="login-page">
+    <div class="feedback-info">
+        <div class="processing">
+            <p>Processing....</p>
+        </div>
+        <div class="error  none">
+            Please correct the errors
+        </div>
+    </div>
+    <div class="form-wrapper">
+        <p class="user-icon">
+            <i class="fas fa-user-circle"></i>
+        </p>
+        <form id="login-form">
+            <div class="form-input">
+                <label for="email">Email</label>
+                <br />
+                <input type="email" name="email" id="email" placeholder="i.e example@gmail.com" />
+                <span class="email-error span-error">This is an error</span>
+                <span class="more-info">We will send a verification link to this email</span>
+            </div>
+            <div class="form-input">
+                <label for="email">Password</label>
+                <br />
+                <input type="password" name="password" id="password" />
+                <span class="password-error span-error">This is an error</span>
+                <span class="more-info">Enter a password that is between 8 and 15 characters</span>
+            </div>
+            <button>Register</button>
+
+            <p class="login">
+                Already have an account?
+                <a href="#">Sign in</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<%- include('./_close.ejs'); %> 

@@ -1,0 +1,60 @@
+@import url('./css_partials/card.css');
+@import url('./css_partials/header.css');
+@import url('./css_partials/footer.css');
+@import url('./css_partials/register.css');
+@import url('./css_partials/cart_page.css');
+@import url('./css_partials/notifications.css');
+@import url('./css_partials/single_product.css');
+@import url('./css_partials/header2.css');
+@import url('./css_partials/hero.css');
+@import url('./css_partials/upload_page.css');
+
+*, 
+*::before, 
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.body .label-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.body .label-wrapper .head {
+    display: flex;
+}
+.body .label-wrapper .head p:first-child {
+    flex-grow: 0;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.body .label-wrapper .head p:last-child {
+    flex-grow: 1;
+    position: relative;
+}
+.body .label-wrapper .head p:last-child::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px !important;
+    background-color: grey;
+}
+.body .products-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    grid-auto-rows: auto;
+    column-gap: 10px;
+}
